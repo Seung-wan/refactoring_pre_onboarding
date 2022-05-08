@@ -1,0 +1,34 @@
+@use '/src/styles/constants/colors';
+
+.tab {
+  position: relative;
+  display: flex;
+  width: 450px;
+  height: 100px;
+  margin-top: 15px;
+  list-style: none;
+}
+
+.menu {
+  width: 150px;
+  height: 3em;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 3em;
+  color: colors.$GRAYD;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 3px solid #e6e6e6;
+}
+
+.selected {
+  color: colors.$BLACK;
+}
+
+.selectedTab {
+  position: absolute;
+  width: 150px;
+  height: 3em;
+  border-bottom: 3px solid #50acad;
+  transition: 0.3s;
+}

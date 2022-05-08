@@ -1,0 +1,9 @@
+jsxSingleQuote: true
+# 세미콜론 사용 여유
+semi: false
+printWidth: 120
+proseWrap: never
+singleQuote: true
+htmlWhitespaceSensitivity: 'css'
+# line feed, 파일의 마지막에 엔터 한장 쳐준다. export default 다음에 한 줄 더 여유있게 남기고 파일 저장
+endOfLine: 'lf'

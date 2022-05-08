@@ -1,0 +1,68 @@
+@use '/src/styles/constants/colors';
+// Grayscale
+// $WHITE: #ffffff;
+// $BLACK: #000000;
+// $GRAY2: #222222;
+// $GRAY3: #333333;
+// $GRAY6: #666666;
+// $GRAYA: #aaaaaa;
+// $GRAYD: #dddddd;
+// $GRAYE: #eeeeee;
+
+.inputContainer {
+  .inputLabelWrapper {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+      padding: 5px;
+      font-size: 12px;
+      color: colors.$GRAY6;
+      letter-spacing: 0.2px;
+    }
+
+    .inputIconWrapper {
+      position: relative;
+
+      .email,
+      .password {
+        width: 300px;
+        height: 40px;
+        padding: 5px 10px;
+        border: 1px solid colors.$GRAYD;
+      }
+
+      .email::placeholder,
+      .password::placeholder {
+        color: colors.$GRAYD;
+      }
+
+      .icon {
+        position: absolute;
+        right: 10px;
+        bottom: 50%;
+        font-size: 15px;
+        transform: translateY(50%);
+      }
+
+      .checkIcon {
+        color: colors.$GRAYD;
+      }
+
+      .checked {
+        color: colors.$GREEN;
+      }
+
+      + .inputWrapper {
+        margin-top: 30px;
+      }
+    }
+
+    .errorMessage {
+      padding-top: 5px;
+      padding-left: 5px;
+      font-size: 12px;
+      color: colors.$RED;
+    }
+  }
+}
